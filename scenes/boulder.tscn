@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://cda85fupjvme3"]
+
+[ext_resource type="Script" uid="uid://cf3146plfmmxl" path="res://scripts/boulder.gd" id="1_7lox5"]
+[ext_resource type="Texture2D" uid="uid://mwgysig4nwbx" path="res://assets/sprites/OBJ_Boulder.png" id="1_475t6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7lox5"]
+size = Vector2(15, 7)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c7t8v"]
+size = Vector2(8, 27)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8hte1"]
+size = Vector2(7, 23)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jrtjv"]
+size = Vector2(7.5, 23)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wye2t"]
+size = Vector2(18, 37)
+
+[node name="Boulder" type="StaticBody2D"]
+script = ExtResource("1_7lox5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_475t6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-15.5, 7)
+shape = SubResource("RectangleShape2D_7lox5")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="."]
+position = Vector2(21, 7.5)
+shape = SubResource("RectangleShape2D_c7t8v")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(13.5, -6.5)
+shape = SubResource("RectangleShape2D_8hte1")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(-11.75, -7.5)
+shape = SubResource("RectangleShape2D_jrtjv")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(1, -13.5)
+shape = SubResource("RectangleShape2D_wye2t")

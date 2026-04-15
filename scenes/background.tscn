@@ -1,0 +1,217 @@
+[gd_scene load_steps=0 format=3 uid="uid://bo7lkpdk1t66u"]
+
+[ext_resource type="Texture2D" uid="uid://def5k6hjtnh7p" path="res://assets/sprites/BCK_DayFrontHills.PNG" id="1_l5f8m"]
+[ext_resource type="Texture2D" uid="uid://c24re6x0jqpbu" path="res://assets/sprites/BCK_DayBackHills.PNG" id="2_6vm3t"]
+[ext_resource type="Texture2D" uid="uid://dmgvlebhmerf5" path="res://assets/sprites/BCK_DayStructure.PNG" id="3_8efq7"]
+[ext_resource type="Texture2D" uid="uid://dig26t76q8ld5" path="res://assets/sprites/BCK_DayClouds.PNG" id="4_da6cc"]
+[ext_resource type="Texture2D" uid="uid://bv28nrbpuc6y7" path="res://assets/sprites/BCK_DaySky.PNG" id="5_b6e46"]
+[ext_resource type="Texture2D" uid="uid://ce4me4odl2epb" path="res://assets/sprites/BCK_DayCloudsColor.PNG" id="6_td6w2"]
+[ext_resource type="Texture2D" uid="uid://sx404mfokg87" path="res://assets/sprites/BCK_CaveEntrance.PNG" id="7_r2thq"]
+[ext_resource type="Texture2D" uid="uid://d7nlvu7ag557" path="res://assets/sprites/BCK_Cave.PNG" id="8_0470j"]
+
+[node name="Background" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 140.0
+offset_top = 60.0
+offset_right = 200.0
+offset_bottom = 99.0
+scale = Vector2(0.5, 0.5)
+
+[node name="Parallax2D" type="Parallax2D" parent="Control"]
+z_index = -3
+scroll_scale = Vector2(0.3, 1.1)
+scroll_offset = Vector2(2, 84)
+
+[node name="TextureRect" type="TextureRect" parent="Control/Parallax2D"]
+offset_left = 274.0
+offset_top = -326.0
+offset_right = 15099.0
+offset_bottom = 74.0
+texture = ExtResource("1_l5f8m")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Control2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 80.0
+offset_top = 10.0
+offset_right = 120.0
+offset_bottom = 50.0
+scale = Vector2(0.7, 0.7)
+
+[node name="Parallax2D2" type="Parallax2D" parent="Control2"]
+z_index = -4
+scroll_scale = Vector2(0.1, 1.2)
+scroll_offset = Vector2(2, 84)
+
+[node name="TextureRect" type="TextureRect" parent="Control2/Parallax2D2"]
+offset_left = 268.0
+offset_top = -300.0
+offset_right = 11093.0
+offset_bottom = 100.0
+texture = ExtResource("2_6vm3t")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Control3" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 121.0
+offset_top = 14.0
+offset_right = 161.0
+offset_bottom = 54.0
+scale = Vector2(0.5, 0.5)
+
+[node name="Parallax2D3" type="Parallax2D" parent="Control3"]
+z_index = -5
+scroll_scale = Vector2(-0.6, 1)
+scroll_offset = Vector2(2, 84)
+
+[node name="TextureRect" type="TextureRect" parent="Control3/Parallax2D3"]
+offset_left = 287.0
+offset_top = -200.0
+offset_right = 16112.0
+offset_bottom = 200.0
+texture = ExtResource("3_8efq7")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Control4" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 200.0
+offset_top = -35.0
+offset_right = 240.0
+offset_bottom = 5.0
+scale = Vector2(0.3, 0.3)
+
+[node name="Parallax2D4" type="Parallax2D" parent="Control4"]
+z_index = -6
+scroll_scale = Vector2(-2, 1)
+scroll_offset = Vector2(5.33331, 84)
+
+[node name="TextureRect" type="TextureRect" parent="Control4/Parallax2D4"]
+offset_left = 294.0
+offset_top = -257.0
+offset_right = 25294.0
+offset_bottom = 143.0
+texture = ExtResource("4_da6cc")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Control5" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -42.0
+offset_top = -4.0
+offset_right = -2.0
+offset_bottom = 36.0
+
+[node name="Parallax2D5" type="Parallax2D" parent="Control5"]
+z_index = -7
+scroll_offset = Vector2(2, 84)
+
+[node name="TextureRect" type="TextureRect" parent="Control5/Parallax2D5"]
+offset_left = 297.0
+offset_top = -251.0
+offset_right = 7122.0
+offset_bottom = 149.0
+texture = ExtResource("5_b6e46")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Control6" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -44.0
+offset_top = 176.0
+offset_right = -4.0
+offset_bottom = 216.0
+
+[node name="Parallax2D5" type="Parallax2D" parent="Control6"]
+z_index = -7
+scroll_offset = Vector2(2, 84)
+
+[node name="TextureRect" type="TextureRect" parent="Control6/Parallax2D5"]
+offset_left = 297.0
+offset_top = -251.0
+offset_right = 7122.0
+offset_bottom = 149.0
+texture = ExtResource("6_td6w2")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Control7" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 140.0
+offset_top = 60.0
+offset_right = 200.0
+offset_bottom = 99.0
+scale = Vector2(0.5, 0.5)
+
+[node name="Parallax2D" type="Parallax2D" parent="Control7"]
+z_index = -3
+scroll_offset = Vector2(18, 84)
+limit_end = Vector2(100000, 10000000)
+
+[node name="TextureRect" type="TextureRect" parent="Control7/Parallax2D"]
+offset_left = 8058.0
+offset_top = -346.0
+offset_right = 8658.0
+offset_bottom = 54.0
+texture = ExtResource("7_r2thq")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Control8" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 140.0
+offset_top = 60.0
+offset_right = 200.0
+offset_bottom = 99.0
+scale = Vector2(0.5, 0.5)
+
+[node name="Parallax2D" type="Parallax2D" parent="Control8"]
+z_index = -3
+scroll_offset = Vector2(18, 84)
+limit_end = Vector2(100000, 10000000)
+
+[node name="TextureRect" type="TextureRect" parent="Control8/Parallax2D"]
+offset_left = 11364.0
+offset_top = -536.0
+offset_right = 11964.0
+offset_bottom = -136.0
+texture = ExtResource("7_r2thq")
+stretch_mode = 1
+flip_h = true
+flip_v = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Control9" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 4516.0
+offset_top = -152.0
+offset_right = 4516.0
+offset_bottom = -152.0
+scale = Vector2(0.4, 0.4)
+
+[node name="Parallax2D" type="Parallax2D" parent="Control9"]
+z_index = -3
+scroll_offset = Vector2(18, 84)
+limit_end = Vector2(100000, 10000000)
+
+[node name="TextureRect" type="TextureRect" parent="Control9/Parallax2D"]
+offset_left = -115.5
+offset_top = -146.5
+offset_right = 3274.5
+offset_bottom = 653.5
+texture = ExtResource("8_0470j")
+stretch_mode = 1
+metadata/_edit_use_anchors_ = true

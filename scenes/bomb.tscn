@@ -1,0 +1,25 @@
+[gd_scene load_steps=0 format=3 uid="uid://crilvbv17xqvr"]
+
+[ext_resource type="Script" uid="uid://bdqjn4v76kwxf" path="res://scripts/bomb.gd" id="1_vpdcx"]
+[ext_resource type="Texture2D" uid="uid://vhn6q5hk5ptr" path="res://assets/sprites/OBJ_Common.PNG" id="2_vpdcx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6bl7j"]
+radius = 7.07107
+
+[node name="Bomb" type="RigidBody2D"]
+collision_layer = 2
+script = ExtResource("1_vpdcx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_6bl7j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_vpdcx")
+region_enabled = true
+region_rect = Rect2(0.948341, 79.4719, 14.7986, 15.7333)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

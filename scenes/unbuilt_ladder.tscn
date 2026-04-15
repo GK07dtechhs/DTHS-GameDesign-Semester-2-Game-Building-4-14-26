@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://cod4duuymum0k"]
+
+[ext_resource type="Script" uid="uid://sj5io3e2e8yk" path="res://scripts/unbuilt_ladder.gd" id="1_885go"]
+[ext_resource type="Texture2D" uid="uid://c130x5xq1mcgl" path="res://assets/sprites/OBJ_Decorations.png" id="1_gj731"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ftvid"]
+size = Vector2(16, 6)
+
+[node name="UnbuiltLadder" type="StaticBody2D"]
+scale = Vector2(1.5, 2)
+script = ExtResource("1_885go")
+metadata/Unbuilt = true
+
+[node name="LadderSprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_gj731")
+region_enabled = true
+region_rect = Rect2(193, 16, 16, 48)
+
+[node name="Step1" type="CollisionShape2D" parent="."]
+position = Vector2(0, 17)
+shape = SubResource("RectangleShape2D_ftvid")
+one_way_collision = true
+
+[node name="Step2" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ftvid")
+one_way_collision = true
+
+[node name="Step3" type="CollisionShape2D" parent="."]
+position = Vector2(0, -17)
+shape = SubResource("RectangleShape2D_ftvid")
+one_way_collision = true
